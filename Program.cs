@@ -31,7 +31,19 @@ namespace ConsoleApp1
             Console.WriteLine(5.0 / 2);
             
             Console.WriteLine("hello " + name);
-            Console.ReadLine();           
+            Console.WriteLine(Convert.ToInt32(5/2));
+            Console.WriteLine(cube(4));
+            SayHi("mitul", 16);
+            Console.ReadLine();
         }
-    }
-}
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("hello "+name+" you are "+(age+5) );
+        }
+        static int cube(int num)
+        {
+            int result = num * num * num;
+            return result;
+        }
+                     
+    
